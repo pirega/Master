@@ -7,7 +7,7 @@
 
 output_dir="/media/scratch/3_anotacion/conteo/"
 GENOME="/media/scratch1/09MBIF/1_datos/2_reference_genome/genome.gtf"
-for FILE in $(ls ./*sorted.bam)
+for FILE in $(ls /media/scratch1/09MBIF/1_datos/3_anotacion/*sorted.bam)
 do
     #echo $FILE
     ID=$(basename $FILE)
