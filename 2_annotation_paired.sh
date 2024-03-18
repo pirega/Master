@@ -18,7 +18,7 @@ do
     BAM="$output_dir$(echo $SEQ)_hisat2.bam"
     SBAM="$output_dir$(echo $SEQ)_sorted.bam"
     echo "Procesando $SEQ"
-    hisat2 -k1 -p 20 -1 $FILE -2 $FILE -x /media/scratch1/09MBIF/1_datos/2_reference_genome/genome -S $SAM
+    hisat2 -k1 -p 20 -1 $FILE -2 $FILE2 -x /media/scratch1/09MBIF/1_datos/2_reference_genome/genome -S $SAM
     echo "Finalizada anotacion"
     samtools view -Sbh $SAM > $BAM
     samtools sort $BAM -o $SBAM
